@@ -1,1 +1,1 @@
-## [pet-project] (https://danyazavarin.github.io/responsive_site1/)
+## [pet_project](https://danyazavarin.github.io/responsive_site1/)
