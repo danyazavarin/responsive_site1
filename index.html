@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>App_system</title>
-    <meta name="description" content="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-    <h1>Heading</h1>
+<div class="app" id="app">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="#app">
+                <img src="assets/logo.svg" alt="logo" width="190" height="32">
+            </a>
+            <nav class="header__nav">
+                <a class="header__nav-link active" href="#app">Домой</a>
+                <a class="header__nav-link" href="#features">Особенности</a>
+                <a class="header__nav-link" href="#benefits">Преимущества</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main__content">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <figure class="hero__figure">
+                        <img class="hero__image" src="assets/hero_1.png" alt="img">
+                    </figure>
+
+                    <div class="hero__text">
+                        <h1 class="hero__title">Разработано 2000+ приложений</h1>
+
+                        <div class="hero__subtitle">
+                            Для вашего удобства мы разработали множество приложений для вашего бизнеса и команды,
+                            которые доступны
+                            в любое время суток
+                        </div>
+
+                        <button class="hero__button">Присоединяйтесь</button>
+                    </div>
+                </div>
+
+                <div class="hero__dots">
+                    <span class="hero__dot active"></span>
+                    <span class="hero__dot"></span>
+                    <span class="hero__dot"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Features -->
+    <section class="features container" id="features">
+        <div class="tabs__container ">
+            <div class="tabs__nav tabs-nav">
+                <div class="tabs-nav__item is-active" data-tab-name="tab-1">Для бизнеса</div>
+                <div class="tabs-nav__item" data-tab-name="tab-2">Для колл-центров</div>
+                <div class="tabs-nav__item" data-tab-name="tab-3">Облачные хранилища</div>
+            </div>
+            <div class="tabs__content">
+                <div class="tab is-active tab-1">Создаем кастомизированные программы и сервисы
+                    для развития управленческих команд в российских и
+                    международных компаниях
+                </div>
+                <div class="tab tab-2">Помогаем руководителям и командам колл-центров создать полный цикл по поддержке
+                    клиентов и
+                    организовать контроль качества
+                </div>
+                <div class="tab tab-3">Разрабатываем локальные защищенные
+                    корпоративные хранилища, а также осуществляем
+                    поддержку на протяжении всего времени
+                    пользования
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits -->
+    <div class="container" id="benefits">
+        <h1 class="title">Преимущества</h1>
+
+        <div class="benefits">
+            <div class="benefits__item">
+                <img class="benefits__icon" src="assets/Ben_1.png" alt="">
+                <h3 class="benefits__title">Поддержка 24/7</h3>
+                <div class="benefits__text">
+                    <p>Вы можете положиться на нашу круглосуточную
+                        поддержку, которая решит любой вопрос в течении часа</p>
+                </div>
+            </div>
+
+            <div class="benefits__item">
+                <img class="benefits__icon" src="assets/Ben_2.png" alt="">
+                <h3 class="benefits__title">Гарантия возврата</h3>
+                <div class="benefits__text">
+                    <p>Помогаем руководителям и командам колл-центров создать полный цикл по поддержке клиентов и
+                        организовать контроль качества</p>
+                </div>
+            </div>
+
+            <div class="benefits__item">
+                <img class="benefits__icon" src="assets/Ben_3.png" alt="">
+                <h3 class="benefits__title">Удобство и простота</h3>
+                <div class="benefits__text">
+                    <p>Все наши сервисы и приложения интуитивно понятны
+                        для пользователей всех уровней</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__rights">
+                <h3>2000-2022 © System</h3>
+            </div>
+            <div class="footer__contacts">
+                <a class="contacts__link" href="#">
+                    <img class="contacts__icon" src="assets/social_f.png" alt="facebook">
+                </a>
+                <a class="contacts__link" href="#">
+                    <img class="contacts__icon" src="assets/social_t.png" alt="twitter">
+                </a>
+                <a class="contacts__link" href="#">
+                    <img class="contacts__icon" src="assets/social_i.png" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="scripts.js"></script>
 </body>
 </html>
